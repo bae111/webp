@@ -86,22 +86,22 @@ a{
 #content > ul > li{
     width: 33.33%;
 }
-.tab-box{}
-.tab-box > ul{
+#content .tab-box{}
+#content .tab-box > ul{
     display: flex;
     position: relative;
 }
-.tab-box ul li input{
+#content .tab-box ul li input{
     display: none;
 }
-.tab-box ul li label{
+#content .tab-box ul li label{
     display: block;
     line-height: 50px;
     background-color: #006bcc;
     color: #fff;
     padding: 0 20px;
 }
-.tab-box .ab-box{
+#content .tab-box .ab-box{
     position: absolute;
     width: 100%;
     left: 0;
@@ -111,63 +111,63 @@ a{
     height: 150px;
 }
 
-.notice{}
-.notice .ab-box{
+#content .notice{}
+#content .notice .ab-box{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 16px;
     box-sizing: border-box;
 }
-.notice .ab-box dl{
+#content .notice .ab-box dl{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.notice .ab-box dt{}
-.notice .ab-box dt a{}
-.notice .ab-box dd{}
-.notice .ab-box dd a{}
+#content .notice .ab-box dt{}
+#content .notice .ab-box dt a{}
+#content .notice .ab-box dd{}
+#content .notice .ab-box dd a{}
 
-.gallery{}
-.gallery .ab-box{
+#content .gallery{}
+#content .gallery .ab-box{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.gallery .ab-box ul{
+#content .gallery .ab-box ul{
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-.gallery .ab-box ul li{}
-.gallery .ab-box ul li a{}
-.gallery .ab-box ul li a img{}
+#content .gallery .ab-box ul li{}
+#content .gallery .ab-box ul li a{}
+#content .gallery .ab-box ul li a img{}
 
-.tab-box > ul > li input:checked ~ .ab-box{
+#content .tab-box > ul > li input:checked ~ .ab-box{
     z-index: 99;
 }
-.tab-box > ul > li input:checked + label{
+#content .tab-box > ul > li input:checked + label{
     background-color: #67aacc;
     color: #333;
 }
 
 
-.middle-banner{}
-.middle-banner a{
+#content .middle-banner{}
+#content .middle-banner a{
     display: block;
     height: 200px;
     background: url(../images/a-3/banner.jpg);
 }
 
-.direct{
+#content .direct{
     background: url(../images/a-3/direct.jpg);
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.direct button{
+#content .direct button{
     display: block;
     width: 200px;
     line-height: 60px;
@@ -201,22 +201,25 @@ a{
     filter: grayscale(100%);
 }
 
-.ft-list{
+#footer .ft-list{
     width: 80%;
 }
-.ft-list ul{
+#footer .ft-list ul{
     display: flex;
     justify-content: center;
     gap: 60px;
 }
-.ft-list ul li{
+#footer .ft-list ul li{
     
 }
-.ft-list ul li a{
+#footer .ft-list ul li a{
     display: block;
     line-height: 50px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 0 10px;
+    border-radius: 10px;
 }
-.ft-list p{
+#footer .ft-list p{
     text-align: center;
     line-height: 50px;
 }
