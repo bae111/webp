@@ -55,6 +55,7 @@ body{
     height: 0;
     text-align: center;
     z-index: 99;
+    transition: all 0.6s ease-in-out;
 }
 #wrap .depth-02 li{}
 #wrap .depth-02 li a{
@@ -72,144 +73,131 @@ body{
     color: #fff;
 }
 
-#wrap section{
+#main-banner{
     width: 1200px;
     height: 300px;
-}
-#wrap section ul{}
-#wrap section ul li{
     position: relative;
 }
-#wrap section ul li img{}
-#wrap section ul li a{
+#main-banner a span{
     position: absolute;
     width: 20%;
-    left: 40%;
     top: 40%;
-    background-color: rgba(0, 255, 0, 0.3);
-    text-align: center;
-    line-height: 40px;
+    left: 40%;
+    background-color: rgb(0, 255, 0, 0.5);
     color: #000;
     font-weight: bold;
-    z-index: 1;
+    text-align: center;
+    line-height: 3;
 }
 
-#wrap article{
+#content{}
+#container{
     width: 1200px;
     height: 200px;
     display: flex;
     justify-content: space-between;
 }
-#c-1{
-    width: 380px;
-}
-#tab{}
-#tab > li{}
-#tab > li input{
-    display: none;
-}
-#tab > li label{
+#container h4 a{
     display: block;
-    width: 100px;
-    line-height: 40px;
+    width: 20%;
     text-align: center;
     background-color: #333;
     color: #fff;
-    font-weight: bold;
-}
-#tab .ab-box{
-    background-color: #fff;
-    border: solid 1px #008;
-    box-sizing: border-box;
-    height: 160px;
-}
-#tab .ab-box .notice-content{}
-#tab .ab-box .notice-content li:hover a{
-    background-color: #ccc;
-}
-#tab .ab-box .notice-content li a{
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
     line-height: 40px;
-    color: #000;
 }
-#c-2{
-    width: 380px;
+.c-1{
+    width: 33.33%;
     
 }
-#tab .ab-box .gallery-content{
+.c-1 h4{}
+.c-1 h4 a{
+
+}
+.c-1 dl{
+    display: flex;
+    justify-content: space-between;
+    line-height: 37px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    /* border-bottom: 0;
+    border-top: 0; */
+    box-sizing: border-box;
+}
+.c-1 dl dt{}
+.c-1 dl:nth-child(even){
+    background-color: #ccc;
+}
+.c-1 dl dt a{
+    margin-left: 20px;
+    color: #000;
+}
+.c-1 dl dd{
+    margin-right: 20px;
+}
+.c-1 dl:hover{
+    background-color: #008000;
+}
+
+.c-2{
+    width: 33.33%;
+}
+.c-2 ul{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     height: 160px;
+    border: solid 1px #ccc;
+    box-sizing: border-box;
 }
-#tab .ab-box .gallery-content li a{
+.c-2 ul li{}
+.c-2 ul li a{}
+.c-2 ul li a img{
     
 }
-#tab .ab-box .gallery-content li a img{
-    width: 100%;
-    margin-top: 35px;
-}
-#c-3{
-    width: 400px;
+
+.c-3{
+    width: 33.33%;
     position: relative;
 }
-#c-3 img{}
-#c-3 a{
+.c-3 a{}
+.c-3 a img{
+    
+}
+.c-3 a span{
     position: absolute;
-    width: 20%;
-    left: 40%;
+    width: 40%;
     top: 40%;
-    background-color: rgba(0, 255, 0, 0.3);
-    text-align: center;
-    line-height: 40px;
-    color: #000;
+    left: 30%;
+    background-color: rgb(0, 255, 0, 0.5);
+    color: #fff;
     font-weight: bold;
+    text-align: center;
+    line-height: 3;
 }
 
-#wrap footer{
-    width: 1200px;
-    height: 100px;
-    background-color: #ccc;
+footer{
     display: flex;
     justify-content: space-between;
+    width: 1200px;
+    height: 100px;
+    background-color: #333;
 }
-
-#footer-logo{
+.footer-logo{
     margin: 30px 0 0 30px;
 }
-
-#Copyright{
-    margin-top: 35px;
+.Copyright{
+    color: #ccc;
+    line-height: 100px;
 }
-#family{
-    position: relative;
-    text-align: center;
-}
-#family button{
+.footer-sns{
     width: 200px;
-    background-color: #ccc;
-    border: 0;
-    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
 }
-#family ul{
-    position: absolute;
-    width: 100%;
-    bottom: 100%;
-    left: 0;
-    overflow: hidden;
-    height: 0;
-    transition: all 0.6s ease-in-out;
-}
-#family ul li a{
-    display: block;
-    line-height: 50px;
-    color: #000;
-    background-color: #ccc;
-    border-bottom: solid 1px #000;
-}
-.slide{
-    height: 150px !important;
+.footer-sns img{
+    border-radius: 50%;
 }
 
 #popup-box{
@@ -220,7 +208,7 @@ body{
     left: calc(50% - 200px);
     background-color: #fff;
     border: solid 1px #000;
-    
+    display: none;
 }
 #popup-box strong{
     display: block;
@@ -237,5 +225,5 @@ body{
     cursor: pointer;
 }
 .show{
-    display: none;
+    display: block !important;
 }
