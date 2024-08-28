@@ -45,6 +45,7 @@
                     </li>
                 </ul>
             </nav>
+            <div class="fake"></div>
         </header>
         <main>
             <section id="mainBanner">
@@ -57,9 +58,9 @@
                     <li class="tabNotice">
                         <input type="radio" id="noticeCheck" name="tabRadio" checked>
                         <label for="noticeCheck">공지사항</label>
-                        <div class="ab-box">
+                        <div class="abBox">
                             <dl>
-                                <dt><a href="#">상반기 신입/경력 사원 채용 공고</a></dt>
+                                <dt><a id="openBtn" href="#">상반기 신입/경력 사원 채용 공고</a></dt>
                                 <dd><a href="#">2020.11.20</a></dd>
                             </dl>
                             <dl>
@@ -76,9 +77,52 @@
                             </dl>
                         </div>
                     </li>
+                    <li class="tabGallery">
+                        <input type="radio" id="galleryCheck" name="tabRadio" checked>
+                        <label for="galleryCheck">갤러리</label>
+                        <div class="abBox">
+                            <ul>
+                                <li><a href="#"><img src="./images/a-4/icon1.jpg" alt="갤러리 첫번째 이미지"></a></li>
+                                <li><a href="#"><img src="./images/a-4/icon2.jpg" alt="갤러리 두번째 이미지"></a></li>
+                                <li><a href="#"><img src="./images/a-4/icon3.jpg" alt="갤러리 세번째 이미지"></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="direct">
+                        <button>바로가기</button>
+                    </li>
                 </ul>
             </section>
         </main>
+        <footer id="footer">
+            <div class="ftList">
+                <ul>
+                    <li><a href="#">하단메뉴1</a></li>
+                    <li><a href="#">하단메뉴2</a></li>
+                    <li><a href="#">하단메뉴3</a></li>
+                </ul>
+                <p>
+                    COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED
+                </p>
+            </div>
+            <div class="family">
+                <button>패밀리사이트</button>
+                <ul>
+                    <li><a href="#">패밀리사이트1</a></li>
+                    <li><a href="#">패밀리사이트2</a></li>
+                    <li><a href="#">패밀리사이트3</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
+    <div id="popupBox">
+        <button id="closeBtn">X 닫기</button>
+        <h3>상반기 신입/경력 사원 채용 공고</h3>
+        <p>국내 최고의 건설회사로 발돋움하고 있는 유진건설에서는 
+            열정을 가지고 진취적으로 도전하는 신입/경력 사원을 모집합니다.
+            남율건설과 함께 하실 역량있는 인재들의 많은 지원을 기다립니다.</p>
+    </div>
+    <script src="./script/jquery-1.12.3.js"></script>
+    <script src="./script/a-4.js"></script>
 </body>
 </html>
